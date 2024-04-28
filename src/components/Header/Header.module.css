@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  background-color: black;
+}
+
+.link {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blue; /* Color de fondo predeterminado */
+  text-decoration: none; /* Quitamos la decoración de subrayado predeterminada */
+  margin: 0 10px; /* Ajustamos el margen horizontal */
+  position: relative; /* Permitirá posicionar el subrayado relativo al elemento en sí */
+}
+
+.link:hover::after {
+  content: ''; /* Agregamos un pseudo-elemento ::after */
+  position: absolute; /* Lo posicionamos absolutamente dentro del enlace */
+  left: 0; /* Alineado con el borde izquierdo del enlace */
+  bottom: -2px; /* Posicionado justo debajo del texto */
+  width: 100%; /* Ocupa todo el ancho del enlace */
+  height: 2px; /* Grosor del subrayado */
+  background-color: white; /* Color del subrayado */
+  animation: animate 250ms ease-in; /* Aplicamos la animación */
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
