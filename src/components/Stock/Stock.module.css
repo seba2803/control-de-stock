@@ -1,0 +1,17 @@
+.table {
+  border: 2px solid black;
+  border-radius: 5px;
+  background: transparent;
+  backdrop-filter: blur(4px);
+}
+
+.tr {
+  background-color: rgba(220, 220, 220, 0.2);
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.tBody > .tr:nth-child(odd) {
+  background-color: rgba(200, 200, 200, 0.7);
+  text-wrap: wrap;
+}

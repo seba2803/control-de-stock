@@ -7,6 +7,7 @@ function App() {
     <>
       <Header />
       <Stock />
+
       <Routes>
         {/* <Route path='/' />
         <Route path='stock' />
